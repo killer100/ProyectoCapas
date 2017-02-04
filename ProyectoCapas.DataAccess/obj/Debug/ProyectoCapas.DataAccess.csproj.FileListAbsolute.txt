@@ -1,0 +1,16 @@
+D:\PROYECTOS\ProyectoCapas\ProyectoCapas.DataAccess\bin\Debug\ProyectoCapas.DataAccess.dll.config
+D:\PROYECTOS\ProyectoCapas\ProyectoCapas.DataAccess\bin\Debug\ProyectoCapas.DataAccess.dll
+D:\PROYECTOS\ProyectoCapas\ProyectoCapas.DataAccess\bin\Debug\ProyectoCapas.DataAccess.pdb
+D:\PROYECTOS\ProyectoCapas\ProyectoCapas.DataAccess\bin\Debug\ProyectoCapas.Entidades.dll
+D:\PROYECTOS\ProyectoCapas\ProyectoCapas.DataAccess\bin\Debug\ProyectoCapas.Entidades.pdb
+D:\PROYECTOS\ProyectoCapas\ProyectoCapas.DataAccess\obj\Debug\ProyectoCapas.DataAccess.csprojResolveAssemblyReference.cache
+D:\PROYECTOS\ProyectoCapas\ProyectoCapas.DataAccess\obj\Debug\ProyectoCapas.DataAccess.dll
+D:\PROYECTOS\ProyectoCapas\ProyectoCapas.DataAccess\obj\Debug\ProyectoCapas.DataAccess.pdb
+D:\proyectos\NET\ProyectoCapas\ProyectoCapas.DataAccess\bin\Debug\ProyectoCapas.DataAccess.dll.config
+D:\proyectos\NET\ProyectoCapas\ProyectoCapas.DataAccess\bin\Debug\ProyectoCapas.DataAccess.dll
+D:\proyectos\NET\ProyectoCapas\ProyectoCapas.DataAccess\bin\Debug\ProyectoCapas.DataAccess.pdb
+D:\proyectos\NET\ProyectoCapas\ProyectoCapas.DataAccess\bin\Debug\ProyectoCapas.Entidades.dll
+D:\proyectos\NET\ProyectoCapas\ProyectoCapas.DataAccess\bin\Debug\ProyectoCapas.Entidades.pdb
+D:\proyectos\NET\ProyectoCapas\ProyectoCapas.DataAccess\obj\Debug\ProyectoCapas.DataAccess.csprojResolveAssemblyReference.cache
+D:\proyectos\NET\ProyectoCapas\ProyectoCapas.DataAccess\obj\Debug\ProyectoCapas.DataAccess.dll
+D:\proyectos\NET\ProyectoCapas\ProyectoCapas.DataAccess\obj\Debug\ProyectoCapas.DataAccess.pdb

@@ -1,0 +1,87 @@
+<div class="modal-header">
+    <button type="button" class="close" data-dixsiss="modal" aria-label="Close" ng-click="vm.close()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <h5 class="modal-title" data-ng-bind="vm.title"></h5>
+</div>
+<div class="modal-body" bs-loading-overlay="ovl-formulario-factura">
+
+    <div class="form-group" ng-if="vm.tipoFormulario!=1">
+        <div class="col-md-12">
+            <label>Numero de Factura</label>
+            <input type="text" class="form-control input-sm" value="{{vm.factura.cod_clie}}" readonly>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-12">
+            <label>Cliente</label>
+            <input type="text" class="form-control input-sm" value="{{vm.factura.mon_ape}}" ng-if="vm.tipoFormulario==3" readonly>
+            <angucomplete-alt placeholder="Buscar Clientes" pause="400" selected-object="vm.selectCliente" remote-url="{{vm.url_buscar_clientes}}"
+                              remote-url-data-field="clientes" title-field="cod_clie,mon_ape" input-class="form-control input-sm" text-no-results="No se encontraron resultados"
+                              text-searching="Buscando clientes..." disable-input="vm.factura.cod_clie" ng-if="vm.tipoFormulario!=3" />
+        </div>
+    </div>
+    <div class="form-group" ng-if="vm.tipoFormulario==3">
+        <div class="col-md-12">
+            <label>Fecha</label>
+            <input type="text" class="form-control input-sm" value="{{vm.factura.fech_vent}}" readonly>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-12">
+            <label>Detalle</label>
+            <div>
+                <angucomplete-alt placeholder="Buscar Artículos" pause="400" selected-object="vm.selectArticulo" remote-url="{{vm.url_buscar_articulos}}"
+                                  remote-url-data-field="articulos" title-field="title" input-class="form-control input-sm" text-no-results="No se encontraron resultados"
+                                  text-searching="Buscando Artículos..." clear-selected="true" ng-if="vm.tipoFormulario!=3" />
+            </div>
+
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Artículo</th>
+                        <th>Codigo</th>
+                        <th>Cantidad</th>
+                        <th>Monto</th>
+                        <th ng-if="vm.tipoFormulario!=3">Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-show="vm.factura.detalle.length==0">
+                        <td colspan="{{vm.tipoFormulario==3?4:5}}" class="text-center">
+                            No hay artículos
+                        </td>
+                    </tr>
+                    <tr ng-repeat="item in vm.factura.detalle">
+                        <td>{{item.descrip}}</td>
+                        <td>{{item.cod_art}}</td>
+                        <td>
+                            <span ng-if="vm.tipoFormulario==3">{{item.cant}}</span>
+                            <select ng-model="item.cant" ng-options="n for n in [] | range:1:item.stock" ng-if="vm.tipoFormulario!=3"></select>
+                        </td>
+                        <td>
+                            <span>S/. {{item.cant*item.prec_unic}}</span>
+                        </td>
+                        <td ng-if="vm.tipoFormulario!=3">
+                            <a ng-click="vm.QuitarVenta(item)" title="Quitar" href="javascript:"><i class="glyphicon glyphicon-trash"></i></a>
+                        </td>
+                    </tr>
+                    <tr ng-show="vm.factura.detalle.length>0">
+                        <td colspan="3"></td>
+                        <td><span>S/. {{vm.montoTotal()}}</span></td>
+                        <td ng-if="vm.tipoFormulario!=3"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <div ng-if="vm.tipoFormulario==1||vm.tipoFormulario==2">
+        <button class="btn btn-primary btn-sm" ng-click="vm.guardar()">Generar Factura</button>
+        <button class="btn btn-default btn-sm" ng-click="vm.close()">Cancelar</button>
+    </div>
+    <div ng-if="vm.tipoFormulario==3">
+        <button class="btn btn-default btn-sm" ng-click="vm.close()">Cerrar</button>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+D:\PROYECTOS\ProyectoCapas\ProyectoCapas.Entidades\bin\Debug\ProyectoCapas.Entidades.dll
+D:\PROYECTOS\ProyectoCapas\ProyectoCapas.Entidades\bin\Debug\ProyectoCapas.Entidades.pdb
+D:\PROYECTOS\ProyectoCapas\ProyectoCapas.Entidades\obj\Debug\ProyectoCapas.Entidades.csprojResolveAssemblyReference.cache
+D:\PROYECTOS\ProyectoCapas\ProyectoCapas.Entidades\obj\Debug\ProyectoCapas.Entidades.dll
+D:\PROYECTOS\ProyectoCapas\ProyectoCapas.Entidades\obj\Debug\ProyectoCapas.Entidades.pdb
+D:\proyectos\NET\ProyectoCapas\ProyectoCapas.Entidades\bin\Debug\ProyectoCapas.Entidades.dll
+D:\proyectos\NET\ProyectoCapas\ProyectoCapas.Entidades\bin\Debug\ProyectoCapas.Entidades.pdb
+D:\proyectos\NET\ProyectoCapas\ProyectoCapas.Entidades\obj\Debug\ProyectoCapas.Entidades.csprojResolveAssemblyReference.cache
+D:\proyectos\NET\ProyectoCapas\ProyectoCapas.Entidades\obj\Debug\ProyectoCapas.Entidades.dll
+D:\proyectos\NET\ProyectoCapas\ProyectoCapas.Entidades\obj\Debug\ProyectoCapas.Entidades.pdb

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ProyectoCapas.Host.TransferObjects" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ProyectoCapas.Host.TransferObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfFacturaDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FacturaDto" nillable="true" type="tns:FacturaDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFacturaDto" nillable="true" type="tns:ArrayOfFacturaDto" />
+  <xs:complexType name="FacturaDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cod_clie" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="detalle" nillable="true" type="tns:ArrayOfDetalleDto" />
+      <xs:element minOccurs="0" name="fech_vent" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="mon_ape" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="num_fact" type="xs:decimal" />
+      <xs:element minOccurs="0" name="num_fact_format" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FacturaDto" nillable="true" type="tns:FacturaDto" />
+  <xs:complexType name="ArrayOfDetalleDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DetalleDto" nillable="true" type="tns:DetalleDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDetalleDto" nillable="true" type="tns:ArrayOfDetalleDto" />
+  <xs:complexType name="DetalleDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cant" type="xs:decimal" />
+      <xs:element minOccurs="0" name="cod_art" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="descrip" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="num_fact" type="xs:decimal" />
+      <xs:element minOccurs="0" name="prec_unic" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DetalleDto" nillable="true" type="tns:DetalleDto" />
+</xs:schema>

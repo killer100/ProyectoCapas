@@ -1,0 +1,62 @@
+<h3>
+    Listado de Clientes</h3>
+
+<br />
+
+<button ng-click="vm.NuevoCliente()" class="btn btn-sm btn-primary">Nuevo Cliente</button>
+
+<br />
+
+<div bs-loading-overlay="ovl-listar-clientes" overlay-message="">
+
+    <table class="table table-responsive table-hover table-striped">
+        <thead>
+            <tr>
+                <th width="10%">Codigo Cliente</th>
+                <th width="35%">Nombres y Apellidos</th>
+                <th width="10%">Dni</th>
+                <th width="10%">Telefono</th>
+                <th width="25%">Dirección</th>
+                <th width="10%">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-show="vm.pagination.items.length==0 && !vm.flags.server_error">
+                <td colspan="5" class="text-center">No hay registros</td>
+            </tr>
+            <tr ng-repeat="item in vm.pagination.items" ng-init="item.$update=false">
+                <td>
+                    <span>{{item.cod_clie}}</span>
+                </td>
+                <td>
+                    <span ng-hide="item.$update">{{item.mon_ape}}</span>
+                    <input ng-show="item.$update" type="text" class="form-control input-sm" ng-model="item.mon_ape">
+                </td>
+                <td>
+                    <span ng-hide="item.$update">{{item.telef}}</span>
+                    <input ng-show="item.$update" type="text" class="form-control input-sm" ng-model="item.telef">
+                </td>
+                <td>
+                    <span ng-hide="item.$update">{{item.dni}}</span>
+                    <input ng-show="item.$update" type="text" class="form-control input-sm" ng-model="item.dni">
+                </td>
+                <td>
+                    <span ng-hide="item.$update">{{item.dir}}</span>
+                    <input ng-show="item.$update" type="text" class="form-control input-sm" ng-model="item.dir">
+                </td>
+                <td>
+                    <a ng-click="vm.VerDetalleCliente(item.cod_clie)" title="Ver Detalle" href="javascript:"><i class="glyphicon glyphicon-arrow-right"></i></a>
+                    <a ng-click="vm.BorrarCliente(item.cod_clie)" title="Borrar Cliente" href="javascript:"><i class="glyphicon glyphicon-trash"></i></a>
+                    <a ng-hide="item.$update" href="javascript:" title="Editar" ng-click="vm.HabilitarEdicion(item)"><i class="glyphicon glyphicon-edit"></i></a>
+                    <a ng-show="item.$update" href="javascript:" title="Terminar Edición" ng-click="vm.ActualizarCliente(item)"><i class="glyphicon glyphicon-ok"></i></a>
+                    <a ng-show="item.$update" href="javascript:" title="Cancelar Edición" ng-click="vm.CancelarEdicion(item)"><i class="glyphicon glyphicon-remove-circle"></i></a>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+    <ul uib-pagination total-items="vm.pagination.total" ng-model="vm.pagination.page" ng-change="vm.changePage()" max-size="5"
+        items-per-page="vm.pagination.pageSize" class="pagination-sm" boundary-links="true" num-pages="numPages" last-text=">>"
+        first-text="<<" previous-text="<" next-text=">"></ul>
+
+</div>

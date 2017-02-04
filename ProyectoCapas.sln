@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.PRESENTACION", "1.PRESENTACION", "{C045C2A9-99B8-4767-86F4-D3E55AB3C65E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.SERVICIOS", "2.SERVICIOS", "{E53F1E45-CA95-44BA-8E27-E505254DF1E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.LOGICA", "3.LOGICA", "{C4B06E84-CE8D-4DEA-8498-C2AA53F0845D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.ENTIDADES", "5.ENTIDADES", "{972EC2E6-9C97-48B4-B85B-095095871DEB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.ACCESO_DATOS", "4.ACCESO_DATOS", "{037E2BBC-02F3-45EB-8181-80033F1F5E93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoCapas.Host", "ProyectoCapas.Host\ProyectoCapas.Host.csproj", "{DB9E4599-37E7-4936-B872-BAB1100901F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoCapas.Entidades", "ProyectoCapas.Entidades\ProyectoCapas.Entidades.csproj", "{EC9040E7-1E71-4C36-85E5-FC6B24BAF515}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoCapas.DataAccess", "ProyectoCapas.DataAccess\ProyectoCapas.DataAccess.csproj", "{5EEAB369-F6A7-4D85-832C-45B04A6F14E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoCapas.Dominio", "ProyectoCapas.Dominio\ProyectoCapas.Dominio.csproj", "{DAB791C0-4457-4854-953F-A403DA3599AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoCapas.Web", "ProyectoCapas.Web\ProyectoCapas.Web.csproj", "{A6467977-34FE-4190-8AAB-FA609279392F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DB9E4599-37E7-4936-B872-BAB1100901F0} = {DB9E4599-37E7-4936-B872-BAB1100901F0}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB9E4599-37E7-4936-B872-BAB1100901F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB9E4599-37E7-4936-B872-BAB1100901F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB9E4599-37E7-4936-B872-BAB1100901F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB9E4599-37E7-4936-B872-BAB1100901F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC9040E7-1E71-4C36-85E5-FC6B24BAF515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC9040E7-1E71-4C36-85E5-FC6B24BAF515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC9040E7-1E71-4C36-85E5-FC6B24BAF515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC9040E7-1E71-4C36-85E5-FC6B24BAF515}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EEAB369-F6A7-4D85-832C-45B04A6F14E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EEAB369-F6A7-4D85-832C-45B04A6F14E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EEAB369-F6A7-4D85-832C-45B04A6F14E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EEAB369-F6A7-4D85-832C-45B04A6F14E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAB791C0-4457-4854-953F-A403DA3599AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAB791C0-4457-4854-953F-A403DA3599AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAB791C0-4457-4854-953F-A403DA3599AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAB791C0-4457-4854-953F-A403DA3599AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6467977-34FE-4190-8AAB-FA609279392F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6467977-34FE-4190-8AAB-FA609279392F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6467977-34FE-4190-8AAB-FA609279392F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6467977-34FE-4190-8AAB-FA609279392F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A6467977-34FE-4190-8AAB-FA609279392F} = {C045C2A9-99B8-4767-86F4-D3E55AB3C65E}
+		{DB9E4599-37E7-4936-B872-BAB1100901F0} = {E53F1E45-CA95-44BA-8E27-E505254DF1E0}
+		{DAB791C0-4457-4854-953F-A403DA3599AA} = {C4B06E84-CE8D-4DEA-8498-C2AA53F0845D}
+		{EC9040E7-1E71-4C36-85E5-FC6B24BAF515} = {972EC2E6-9C97-48B4-B85B-095095871DEB}
+		{5EEAB369-F6A7-4D85-832C-45B04A6F14E3} = {037E2BBC-02F3-45EB-8181-80033F1F5E93}
+	EndGlobalSection
+EndGlobal

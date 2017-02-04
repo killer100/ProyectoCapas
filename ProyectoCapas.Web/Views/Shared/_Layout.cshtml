@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    <link rel="stylesheet" href="~/Content/sweetalert.css">
+    <link rel="stylesheet" href="~/Content/Angucomplete.css">
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Home", null, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li ui-sref-active="active"><a ui-sref="articulos-list()">Articulos</a></li>
+                    <li ui-sref-active="active"><a ui-sref="clientes-list()">Clientes</a></li>
+                    <li ui-sref-active="active"><a ui-sref="facturas-list()">Facturas</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+        @*LIBRERIAS*@
+        <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+        <script src="~/Scripts/libs/bootstrap.js"></script>
+        <script src="~/Scripts/libs/angular.min.js"></script>
+        <script src="~/Scripts/libs/angular-ui-router.min.js"></script>
+        <script src="~/Scripts/libs/ui-bootstrap-tpls.min.js"></script>
+        <script src="~/Scripts/libs/angular-loading-overlay.js"></script>
+        <script src="~/Scripts/libs/sweetalert.js"></script>
+        <script src="~/Scripts/libs/angucomplete-alt.min.js"></script>
+        @*APLICACION*@
+        <script src="~/Scripts/app/app.js"></script>
+        <script src="~/Scripts/app/app.services.js"></script>
+        <script src="~/Scripts/app/app.controllers.js"></script>
+        <script src="~/Scripts/app/app.components.js"></script>
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    <script type="text/ng-template" id="_overlay-template.html">
+        <div style="z-index: 10; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(255,255,255,0.7);" class="ng-scope">
+            <div style="position: absolute; top: 95px; bottom: 0; left: 0; right: 0; width: 200px; height: 51px; margin: auto;font-size:13px;color:#808080;" class="text-center">
+                {{message}}
+            </div>
+            <div id="floatingCirclesG">
+                <div class="f_circleG" id="frotateG_01"></div>
+                <div class="f_circleG" id="frotateG_02"></div>
+                <div class="f_circleG" id="frotateG_03"></div>
+                <div class="f_circleG" id="frotateG_04"></div>
+                <div class="f_circleG" id="frotateG_05"></div>
+                <div class="f_circleG" id="frotateG_06"></div>
+                <div class="f_circleG" id="frotateG_07"></div>
+                <div class="f_circleG" id="frotateG_08"></div>
+            </div>
+        </div>
+    </script>
+</body>
+</html>

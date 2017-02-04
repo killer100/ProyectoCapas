@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e801baf0-c72d-4470-b7dd-1b00c867af79" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:9001/TiendaService.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TiendaService1.xsd" MetadataType="Schema" ID="61eddb85-3a52-46a5-89c8-90804afcaf9d" SourceId="1" SourceUrl="http://localhost:9001/TiendaService.svc?xsd=xsd1" />
+    <MetadataFile FileName="TiendaService.xsd" MetadataType="Schema" ID="cdc23a9f-4466-4811-ba72-7834d43cdc14" SourceId="1" SourceUrl="http://localhost:9001/TiendaService.svc?xsd=xsd2" />
+    <MetadataFile FileName="TiendaService2.xsd" MetadataType="Schema" ID="ab8ad389-6e7d-4cef-8171-4578698f84a0" SourceId="1" SourceUrl="http://localhost:9001/TiendaService.svc?xsd=xsd0" />
+    <MetadataFile FileName="TiendaService.wsdl" MetadataType="Wsdl" ID="9b4882b6-e755-4533-bd71-50e6ee3e0147" SourceId="1" SourceUrl="http://localhost:9001/TiendaService.svc?wsdl" />
+    <MetadataFile FileName="TiendaService3.xsd" MetadataType="Schema" ID="cf236c76-b423-4bd3-9275-11af89f1e375" SourceId="1" SourceUrl="http://localhost:9001/TiendaService.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

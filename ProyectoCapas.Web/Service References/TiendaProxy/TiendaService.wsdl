@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="TiendaService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:9001/TiendaService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:9001/TiendaService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:9001/TiendaService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ProyectoCapas.Host.Core" />
+      <xsd:import schemaLocation="http://localhost:9001/TiendaService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/ProyectoCapas.Host.TransferObjects" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ITiendaService_GetPageArticulos_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPageArticulos" />
+  </wsdl:message>
+  <wsdl:message name="ITiendaService_GetPageArticulos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPageArticulosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITiendaService_GetArticulo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetArticulo" />
+  </wsdl:message>
+  <wsdl:message name="ITiendaService_GetArticulo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetArticuloResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITiendaService_SaveArticulo_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveArticulo" />
+  </wsdl:message>
+  <wsdl:message name="ITiendaService_SaveArticulo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveArticuloResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITiendaService_UpdateArticulo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateArticulo" />
+  </wsdl:message>
+  <wsdl:message name="ITiendaService_UpdateArticulo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateArticuloResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITiendaService_DeleteArticulo_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteArticulo" />
+  </wsdl:message>
+  <wsdl:message name="ITiendaService_DeleteArticulo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteArticuloResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITiendaService_ListArticulosByFilter_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListArticulosByFilter" />
+  </wsdl:message>
+  <wsdl:message name="ITiendaService_ListArticulosByFilter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListArticulosByFilterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITiendaService_GetPageClientes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPageClientes" />
+  </wsdl:message>
+  <wsdl:message name="ITiendaService_GetPageClientes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPageClientesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITiendaService_GetCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCliente" />
+  </wsdl:message>
+  <wsdl:message name="ITiendaService_GetCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITiendaService_SaveCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCliente" />
+  </wsdl:message>
+  <wsdl:message name="ITiendaService_SaveCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITiendaService_UpdateCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCliente" />
+  </wsdl:message>
+  <wsdl:message name="ITiendaService_UpdateCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITiendaService_DeleteCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCliente" />
+  </wsdl:message>
+  <wsdl:message name="ITiendaService_DeleteCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITiendaService_ListClientesByFilter_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListClientesByFilter" />
+  </wsdl:message>
+  <wsdl:message name="ITiendaService_ListClientesByFilter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListClientesByFilterResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ITiendaService">
+    <wsdl:operation name="GetPageArticulos">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITiendaService/GetPageArticulos" message="tns:ITiendaService_GetPageArticulos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITiendaService/GetPageArticulosResponse" message="tns:ITiendaService_GetPageArticulos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetArticulo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITiendaService/GetArticulo" message="tns:ITiendaService_GetArticulo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITiendaService/GetArticuloResponse" message="tns:ITiendaService_GetArticulo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveArticulo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITiendaService/SaveArticulo" message="tns:ITiendaService_SaveArticulo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITiendaService/SaveArticuloResponse" message="tns:ITiendaService_SaveArticulo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateArticulo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITiendaService/UpdateArticulo" message="tns:ITiendaService_UpdateArticulo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITiendaService/UpdateArticuloResponse" message="tns:ITiendaService_UpdateArticulo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteArticulo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITiendaService/DeleteArticulo" message="tns:ITiendaService_DeleteArticulo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITiendaService/DeleteArticuloResponse" message="tns:ITiendaService_DeleteArticulo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListArticulosByFilter">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITiendaService/ListArticulosByFilter" message="tns:ITiendaService_ListArticulosByFilter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITiendaService/ListArticulosByFilterResponse" message="tns:ITiendaService_ListArticulosByFilter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPageClientes">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITiendaService/GetPageClientes" message="tns:ITiendaService_GetPageClientes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITiendaService/GetPageClientesResponse" message="tns:ITiendaService_GetPageClientes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITiendaService/GetCliente" message="tns:ITiendaService_GetCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITiendaService/GetClienteResponse" message="tns:ITiendaService_GetCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITiendaService/SaveCliente" message="tns:ITiendaService_SaveCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITiendaService/SaveClienteResponse" message="tns:ITiendaService_SaveCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITiendaService/UpdateCliente" message="tns:ITiendaService_UpdateCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITiendaService/UpdateClienteResponse" message="tns:ITiendaService_UpdateCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITiendaService/DeleteCliente" message="tns:ITiendaService_DeleteCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITiendaService/DeleteClienteResponse" message="tns:ITiendaService_DeleteCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListClientesByFilter">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITiendaService/ListClientesByFilter" message="tns:ITiendaService_ListClientesByFilter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITiendaService/ListClientesByFilterResponse" message="tns:ITiendaService_ListClientesByFilter_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ITiendaService" type="tns:ITiendaService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPageArticulos">
+      <soap:operation soapAction="http://tempuri.org/ITiendaService/GetPageArticulos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArticulo">
+      <soap:operation soapAction="http://tempuri.org/ITiendaService/GetArticulo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveArticulo">
+      <soap:operation soapAction="http://tempuri.org/ITiendaService/SaveArticulo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateArticulo">
+      <soap:operation soapAction="http://tempuri.org/ITiendaService/UpdateArticulo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteArticulo">
+      <soap:operation soapAction="http://tempuri.org/ITiendaService/DeleteArticulo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListArticulosByFilter">
+      <soap:operation soapAction="http://tempuri.org/ITiendaService/ListArticulosByFilter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPageClientes">
+      <soap:operation soapAction="http://tempuri.org/ITiendaService/GetPageClientes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCliente">
+      <soap:operation soapAction="http://tempuri.org/ITiendaService/GetCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveCliente">
+      <soap:operation soapAction="http://tempuri.org/ITiendaService/SaveCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCliente">
+      <soap:operation soapAction="http://tempuri.org/ITiendaService/UpdateCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCliente">
+      <soap:operation soapAction="http://tempuri.org/ITiendaService/DeleteCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListClientesByFilter">
+      <soap:operation soapAction="http://tempuri.org/ITiendaService/ListClientesByFilter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TiendaService">
+    <wsdl:port name="BasicHttpBinding_ITiendaService" binding="tns:BasicHttpBinding_ITiendaService">
+      <soap:address location="http://localhost:9001/TiendaService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

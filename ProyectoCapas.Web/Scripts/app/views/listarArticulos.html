@@ -1,0 +1,57 @@
+﻿<h3>
+    Listado de Artículos</h3>
+
+<br />
+
+<button ng-click="vm.NuevoArticulo()" class="btn btn-sm btn-primary">Nuevo Artículo</button>
+
+<br />
+
+<div bs-loading-overlay="ovl-listar-articulos" overlay-message="">
+
+    <table class="table table-responsive table-hover table-striped">
+        <thead>
+            <tr>
+                <th width="22%">Codigo Articulo</th>
+                <th width="22%">Descripción</th>
+                <th width="22%">Precio</th>
+                <th width="22%">Stock</th>
+                <th width="12%">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-show="vm.pagination.items.length==0 && !vm.flags.server_error">
+                <td colspan="5" class="text-center">No hay registros</td>
+            </tr>
+            <tr ng-repeat="item in vm.pagination.items" ng-init="item.$update=false">
+                <td>
+                    <span>{{item.cod_art}}</span>
+                </td>
+                <td>
+                    <span ng-hide="item.$update">{{item.descrip}}</span>
+                    <input ng-show="item.$update" type="text" class="form-control input-sm" ng-model="item.descrip">
+                </td>
+                <td>
+                    <span ng-hide="item.$update">S/. {{item.prec_unic}}</span>
+                    <input ng-show="item.$update" type="text" class="form-control input-sm" ng-model="item.prec_unic">
+                </td>
+                <td>
+                    <span ng-hide="item.$update">{{item.stock}}</span>
+                    <input ng-show="item.$update" type="text" class="form-control input-sm" ng-model="item.stock">
+                </td>
+                <td>
+                    <a ng-click="vm.VerDetalleArticulo(item.cod_art)" title="Ver Detalle" href="javascript:"><i class="glyphicon glyphicon-arrow-right"></i></a>
+                    <a ng-click="vm.BorrarArticulo(item.cod_art)" title="Borrar Articulo" href="javascript:"><i class="glyphicon glyphicon-trash"></i></a>
+                    <a ng-hide="item.$update" href="javascript:" title="Editar" ng-click="vm.HabilitarEdicion(item)"><i class="glyphicon glyphicon-edit"></i></a>
+                    <a ng-show="item.$update" href="javascript:" title="Terminar Edición" ng-click="vm.ActualizarArticulo(item)"><i class="glyphicon glyphicon-ok"></i></a>
+                    <a ng-show="item.$update" href="javascript:" title="Cancelar Edición" ng-click="vm.CancelarEdicion(item)"><i class="glyphicon glyphicon-remove-circle"></i></a>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+    <ul uib-pagination total-items="vm.pagination.total" ng-model="vm.pagination.page" ng-change="vm.changePage()" max-size="5"
+        items-per-page="vm.pagination.pageSize" class="pagination-sm" boundary-links="true" num-pages="numPages" last-text=">>"
+        first-text="<<" previous-text="<" next-text=">"></ul>
+
+</div>

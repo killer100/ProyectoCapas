@@ -1,0 +1,430 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+
+
+.m-l-5 {
+    margin-left: 5px;
+}
+
+.m-l-10 {
+    margin-left: 10px;
+}
+
+.m-l-15 {
+    margin-left: 15px;
+}
+
+.m-l-20 {
+    margin-left: 20px;
+}
+
+.m-r-5 {
+    margin-right: 5px;
+}
+
+.m-r-10 {
+    margin-right: 10px;
+}
+
+.m-r-15 {
+    margin-right: 15px;
+}
+
+.m-r-20 {
+    margin-right: 20px;
+}
+
+.m-t-5 {
+    margin-top: 5px;
+}
+
+.m-t-10 {
+    margin-top: 10px;
+}
+
+.m-t-15 {
+    margin-top: 15px;
+}
+
+.m-t-20 {
+    margin-top: 20px;
+}
+
+.m-b-5 {
+    margin-bottom: 5px;
+}
+
+.m-b-10 {
+    margin-bottom: 10px;
+}
+
+.m-b-15 {
+    margin-bottom: 15px;
+}
+
+.m-b-20 {
+    margin-bottom: 20px;
+}
+
+.p-l-5 {
+    padding-left: 5px;
+}
+
+.p-l-10 {
+    padding-left: 10px;
+}
+
+.p-l-15 {
+    padding-left: 15px;
+}
+
+.p-l-20 {
+    padding-left: 20px;
+}
+
+.p-r-5 {
+    padding-right: 5px;
+}
+
+.p-r-10 {
+    padding-right: 10px;
+}
+
+.p-r-15 {
+    padding-right: 15px;
+}
+
+.p-r-20 {
+    padding-right: 20px;
+}
+
+.p-t-5 {
+    padding-top: 5px;
+}
+
+.p-t-10 {
+    padding-top: 10px;
+}
+
+.p-t-15 {
+    padding-top: 15px;
+}
+
+.p-t-20 {
+    padding-top: 20px;
+}
+
+.p-b-5 {
+    padding-bottom: 5px;
+}
+
+.p-b-10 {
+    padding-bottom: 10px;
+}
+
+.p-b-15 {
+    padding-bottom: 15px;
+}
+
+.p-b-20 {
+    padding-bottom: 20px;
+}
+
+.position-relative {
+    position: relative;
+}
+
+table.data-table tr td, table.data-table tr th {
+    vertical-align: middle;
+    text-align: center;
+}
+.view-title {
+    border-bottom:solid 1px #eee;padding-bottom:10px;
+}
+.modal-body .form-horizontal {
+    margin-left: 15px;
+}
+
+/***************************************/
+/************SWEET ALERT****************/
+/***************************************/
+.sweet-alert {
+    border-radius: 2px;
+    padding: 10px 30px;
+}
+
+    .sweet-alert h2 {
+        font-size: 16px;
+        font-weight: 400;
+        position: relative;
+        z-index: 1;
+    }
+
+    .sweet-alert .lead {
+        font-size: 13px;
+    }
+
+    .sweet-alert .btn {
+        padding: 6px 12px;
+        font-size: 13px;
+        margin: 20px 2px 0;
+    }
+
+/**********************************************************/
+/************FIX PARA EL MODAL EN SCROLL*******************/
+/**********************************************************/
+
+.modal-backdrop {
+    width: 100% !important;
+    height: 100% !important;
+    position: fixed !important;
+}
+
+/**********************************************************/
+/************ESTILOS PARA EL OVERLAY***********************/
+/**********************************************************/
+#floatingCirclesG {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 51px;
+    height: 51px;
+    margin: auto;
+    transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+}
+
+.f_circleG {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 9px;
+    width: 9px;
+    border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    animation-name: f_fadeG;
+    -o-animation-name: f_fadeG;
+    -ms-animation-name: f_fadeG;
+    -webkit-animation-name: f_fadeG;
+    -moz-animation-name: f_fadeG;
+    animation-duration: 0.622s;
+    -o-animation-duration: 0.622s;
+    -ms-animation-duration: 0.622s;
+    -webkit-animation-duration: 0.622s;
+    -moz-animation-duration: 0.622s;
+    animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-direction: normal;
+    -o-animation-direction: normal;
+    -ms-animation-direction: normal;
+    -webkit-animation-direction: normal;
+    -moz-animation-direction: normal;
+}
+
+#frotateG_01 {
+    left: 0;
+    top: 21px;
+    animation-delay: 0.2295s;
+    -o-animation-delay: 0.2295s;
+    -ms-animation-delay: 0.2295s;
+    -webkit-animation-delay: 0.2295s;
+    -moz-animation-delay: 0.2295s;
+}
+
+#frotateG_02 {
+    left: 6px;
+    top: 6px;
+    animation-delay: 0.316s;
+    -o-animation-delay: 0.316s;
+    -ms-animation-delay: 0.316s;
+    -webkit-animation-delay: 0.316s;
+    -moz-animation-delay: 0.316s;
+}
+
+#frotateG_03 {
+    left: 21px;
+    top: 0;
+    animation-delay: 0.3925s;
+    -o-animation-delay: 0.3925s;
+    -ms-animation-delay: 0.3925s;
+    -webkit-animation-delay: 0.3925s;
+    -moz-animation-delay: 0.3925s;
+}
+
+#frotateG_04 {
+    right: 6px;
+    top: 6px;
+    animation-delay: 0.469s;
+    -o-animation-delay: 0.469s;
+    -ms-animation-delay: 0.469s;
+    -webkit-animation-delay: 0.469s;
+    -moz-animation-delay: 0.469s;
+}
+
+#frotateG_05 {
+    right: 0;
+    top: 21px;
+    animation-delay: 0.5455s;
+    -o-animation-delay: 0.5455s;
+    -ms-animation-delay: 0.5455s;
+    -webkit-animation-delay: 0.5455s;
+    -moz-animation-delay: 0.5455s;
+}
+
+#frotateG_06 {
+    right: 6px;
+    bottom: 6px;
+    animation-delay: 0.622s;
+    -o-animation-delay: 0.622s;
+    -ms-animation-delay: 0.622s;
+    -webkit-animation-delay: 0.622s;
+    -moz-animation-delay: 0.622s;
+}
+
+#frotateG_07 {
+    left: 21px;
+    bottom: 0;
+    animation-delay: 0.6985s;
+    -o-animation-delay: 0.6985s;
+    -ms-animation-delay: 0.6985s;
+    -webkit-animation-delay: 0.6985s;
+    -moz-animation-delay: 0.6985s;
+}
+
+#frotateG_08 {
+    left: 6px;
+    bottom: 6px;
+    animation-delay: 0.775s;
+    -o-animation-delay: 0.775s;
+    -ms-animation-delay: 0.775s;
+    -webkit-animation-delay: 0.775s;
+    -moz-animation-delay: 0.775s;
+}
+
+@keyframes f_fadeG {
+    0% {
+        background-color: rgb(0, 0, 0);
+    }
+
+    100% {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+@-o-keyframes f_fadeG {
+    0% {
+        background-color: rgb(0, 0, 0);
+    }
+
+    100% {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+@-ms-keyframes f_fadeG {
+    0% {
+        background-color: rgb(0, 0, 0);
+    }
+
+    100% {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+@-webkit-keyframes f_fadeG {
+    0% {
+        background-color: rgb(0, 0, 0);
+    }
+
+    100% {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+@-moz-keyframes f_fadeG {
+    0% {
+        background-color: rgb(0, 0, 0);
+    }
+
+    100% {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+/**********************************************************/
+/************ESTILOS PARA EL SWEET ALERT***********************/
+/**********************************************************/
+.sweet-alert p.text-muted {
+    color: #888 !important;
+}
+
+/**********************************************************/
+/************ESTILOS PARA NG-CLOACK***********************/
+/**********************************************************/
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+.splash {
+  display: none;
+}
+
+[ng-cloak].splash {
+  display: block !important;
+}
+
+table.table-default th{
+    background: none;
+    color: #666;
+    border-bottom: 3px solid #ddd !important;
+    font-weight: bold;
+} 
+
+.app-logo-background{
+    background: url('/Content/img/embarcacion_pesquera.jpg');
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    /*opacity: .6;
+    -khtml-opacity:.6; 
+    -moz-opacity:.6; 
+    -ms-filter:'alpha(opacity=60)';
+    filter:alpha(opacity=60);*/
+    z-index:-1;
+}
+/*********************************************************
+//ESTILOS PARA EL SCROLL
+/********************************************************/
+.scroll-wrapper {
+        position: relative;
+        overflow: hidden;
+        height: 300px;
+}

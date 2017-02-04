@@ -1,0 +1,49 @@
+<h3>Listado de Ventas</h3>
+
+<br />
+
+<button ng-click="vm.NuevaFactura()" class="btn btn-sm btn-primary">Nueva Venta</button>
+
+<br />
+
+<div bs-loading-overlay="ovl-listar-facturas" overlay-message="">
+
+    <table class="table table-responsive table-hover table-striped">
+        <thead>
+            <tr>
+                <th width="22%">N° de Factura</th>
+                <th width="22%">Cod. Cliente</th>
+                <th width="22%">Cliente</th>
+                <th width="22%">Fecha de venta</th>
+                <th width="22%">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-show="vm.pagination.items.length==0 && !vm.flags.server_error">
+                <td colspan="6" class="text-center">No hay registros</td>
+            </tr>
+            <tr ng-repeat="item in vm.pagination.items" ng-init="item.$update=false">
+                <td>
+                    <span>{{item.num_fact_format}}</span>
+                </td>
+                <td>
+                    <span>{{item.cod_clie}}</span>
+                </td>
+                <td>
+                    <span>{{item.mon_ape}}</span>
+                </td>
+                <td>
+                    <span>{{item.fech_vent | date: 'dd/MM/yyyy '}}</span>
+                </td>
+                <td>
+                    <a ng-click="vm.VerDetalleFactura(item.num_fact)" title="Ver detalle" href="javascript:"><i class="glyphicon glyphicon-arrow-right"></i></a>        
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+    <ul uib-pagination total-items="vm.pagination.total" ng-model="vm.pagination.page" ng-change="vm.changePage()" max-size="5"
+        items-per-page="vm.pagination.pageSize" class="pagination-sm" boundary-links="true" num-pages="numPages" last-text=">>"
+        first-text="<<" previous-text="<" next-text=">"></ul>
+
+</div>

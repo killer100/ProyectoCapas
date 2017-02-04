@@ -1,0 +1,50 @@
+<div class="modal-header">
+    <button type="button" class="close" data-dixsiss="modal" aria-label="Close" ng-click="vm.close()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    <h5 class="modal-title" data-ng-bind="vm.title"></h5>
+</div>
+<div class="modal-body" bs-loading-overlay="ovl-formulario-articulo">
+    <div class="form-group" ng-show="vm.tipoFormulario==3">
+        <div class="col-md-12">
+            <a href="javascript:" ng-click="vm.tipoFormulario=2"><i class="glyphicon glyphicon-edit"></i> Editar</a>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-12">
+            <label>Codigo de artículo</label>
+            <input type="text" class="form-control input-sm" value="{{vm.articulo.cod_art}}" ng-if="vm.tipoFormulario!=1" readonly>
+            <input type="text" class="form-control input-sm" ng-model="vm.articulo.cod_art" ng-if="vm.tipoFormulario==1">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-12">
+            <label>Descripción</label>
+            <input type="text" class="form-control input-sm" value="{{vm.articulo.descrip}}" ng-if="vm.tipoFormulario==3" readonly>
+            <input type="text" class="form-control input-sm" ng-model="vm.articulo.descrip" ng-if="vm.tipoFormulario!=3">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-12">
+            <label>Precio</label>
+            <input type="text" class="form-control input-sm" value="{{vm.articulo.prec_unic}}" ng-if="vm.tipoFormulario==3" readonly>
+            <input type="text" class="form-control input-sm" ng-model="vm.articulo.prec_unic" ng-if="vm.tipoFormulario!=3">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-12">
+            <label>Stock</label>
+            <input type="text" class="form-control input-sm" value="{{vm.articulo.stock}}" ng-if="vm.tipoFormulario==3" readonly>
+            <input type="text" class="form-control input-sm" ng-model="vm.articulo.stock" ng-if="vm.tipoFormulario!=3">
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <div ng-if="vm.tipoFormulario==1||vm.tipoFormulario==2">
+        <button class="btn btn-primary btn-sm" ng-click="vm.guardar()">Guardar</button>
+        <button class="btn btn-default btn-sm" ng-click="vm.close()">Cancelar</button>
+    </div>
+    <div ng-if="vm.tipoFormulario==3">
+        <button class="btn btn-default btn-sm" ng-click="vm.close()">Cerrar</button>
+    </div>
+</div>
